@@ -80,7 +80,7 @@ select {
 body {
   background-position: 50% 0%;
   background-repeat: no-repeat;
-  background-image: url(/images/fon.jpg);
+  background-image: url(../images/fon.jpg);
   background-color: #07191b;
   display: flex;
   justify-content: center;

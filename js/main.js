@@ -1,4 +1,7 @@
 $(document).on('click', '.main--drop-down', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
     let elemets = document.getElementsByClassName(
         "main--drop-down"
     );

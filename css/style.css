@@ -127,26 +127,185 @@ main {
   text-align: center;
 }
 
+.main--arrows {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+
+.main--span svg {
+  width: 17px;
+  height: 17px;
+}
+
 .main--span::before {
-    background: -webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0) 100%);
-    width: 45%;
-    left: 0;
-    transform: translate(0, 0);
-    content: '';
-    position: absolute;
-    /* top: 50%; */
-    height: 1px;
-    opacity: .3;
+  background: -webkit-linear-gradient(
+    right,
+    #ffffff,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 45%;
+  left: 0;
+  transform: translate(0, 0);
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  opacity: 0.3;
 }
 
 .main--span::after {
-    background: -webkit-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0) 100%);
-    width: 45%;
-    right: 0;
-    transform: translate(0, 0);
-    content: '';
-    position: absolute;
-    /* top: 50%; */
-    height: 1px;
-    opacity: .3;
+  background: -webkit-linear-gradient(
+    left,
+    #ffffff,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 45%;
+  right: 0;
+  transform: translate(0, 0);
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  opacity: 0.3;
+}
+
+.link-e-clinic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: #103335;
+  width: 100%;
+  height: 100%;
+  min-height: 60px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.link-e-clinic:hover {
+  background-color: #0d2b2c;
+  transition: all 0.3s ease 0s;
+}
+
+.link-telegram {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  background-color: #61a8de;
+  width: 100%;
+  height: 100%;
+  min-height: 60px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 0px 0px 0px;
+  transition: all 0.3s ease 0s;
+  padding: 0px 15px;
+}
+
+.link-telegram:hover {
+  background-color: #4c84af;
+  transition: all 0.3s ease 0s;
+}
+
+.link-viber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  background-color: #7d3daf;
+  width: 100%;
+  height: 100%;
+  min-height: 60px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 0px;
+  transition: all 0.3s ease 0s;
+  padding: 0px 15px;
+}
+
+.link-viber:hover {
+  background-color: #612f88;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding: 0px 15px;
+  }
+}
+
+.main--drop-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main--drop-down:hover {
+  cursor: pointer;
+}
+.main--drop-down-top {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.main--drop-down-top-image {
+  width: 26px;
+  height: 26px;
+  background: url(../images/plus.png);
+  margin-right: 15px;
+  transition: all 0.4s ease-in-out;
+}
+.main--drop-down-info {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.main--drop-down.active .main--drop-down-top-image {
+  width: 26px;
+  height: 26px;
+  background: url(../images/minus.png);
+  margin-right: 15px;
+  transition: all 0.4s ease-in-out;
+  transform: translate(0, 0) rotate(180deg);
 }

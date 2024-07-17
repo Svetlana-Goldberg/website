@@ -58,7 +58,9 @@ $(document).mouseup(function (e) {
         console.log('Clicked outside container');
         let elements = document.getElementsByClassName("main--drop-down");
         let dropDowns = document.getElementsByClassName("main--drop-down-info");
-        if ($(elements).hasClass("active")) {
+
+        let activeElement = document.querySelector(".main--drop-down.active");
+        if (activeElement && !activeElement.contains(e.target)) {
             $(elements).removeClass("active");
             $(dropDowns).slideUp();
         }

@@ -349,6 +349,7 @@ main {
 .main--drop-down-top-image {
   width: 26px;
   height: 26px;
+  min-width: 26px;
   background: url(../images/plus.png);
   margin-right: 15px;
   transition: all 0.4s ease-in-out;
